@@ -1,11 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio DanHut</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+      @font-face {
+      font-family: 'Minecraftia';
+      src: url('font/Minecraftia-Regular.ttf') format('truetype');
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Portofolio <span>DanHut</span></a>
+      <div class="navbar-nav" id="navbarNav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#project">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+        <i data-feather="menu"></i>
+      </button>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <div class="hero-text">
+          <h1>HELLO !</h1>
+          <h2>I'm <span>Daniel Hutagalung</span></h2>
+          <p>
+            Si tampan dan pemberani
+          </p>
+        </div>
+        <img src="WhatsApp Image 2026-09-18 at 20.27.32.jpeg" alt="Daniel Hutagalung"/>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+     <section id="about" class="about">
+      <h2><span>About </span>Me</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="WhatsApp Image 2026-09-26 at 16.18.26.jpeg" alt="About me" loading="lazy">
+        </div>
+        <div class="content">
+          <h3>Ngecoding, Ngemusik, <span>Ngegame</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quibusdam incidunt dignissimos soluta, molestiae veniam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi eaque rem esse qui saepe molestias mollitia obcaecati, aspernatur tempora!</p>
+        </div>
+      </div>
+    <!-- About Section End -->
+
+        <!-- Menu Section Start -->
+     <section id="project" class="menu">
+      <h2>My <span>Skills</span></h2>
+      <div class="row">
+        <div class="menu-card">
+          <img src="ISO_C++_Logo.png" alt="Green Suit" class="menu-card-image" loading="lazy">
+          <p>C++</p>
+        </div>
+        <div class="menu-card">
+          <img src="imagek.png" alt="Black Tuxedo" class="menu-card-image" loading="lazy">
+          <p>Javascript</p>
+        </div>
+        <div class="menu-card">
+          <img src="Python-logo-notext.png" alt="Champagne Dress" class="menu-card-image" loading="lazy">
+          <p>Python</p>
+        </div>
+        <div class="menu-card">
+          <img src="1_NJSv6DGoKTloI8d8im98zg.png" alt="Nude Coat" class="menu-card-image" loading="lazy">
+          <p>React JS</p>
+        </div>
+      </div>
+     </section>
+    <!-- Menu Section End -->
+
+    <!-- Projects Section Start -->
+     <section id="projects" class="projects">
+      <h2>My <span>Projects</span></h2>
+      <div class="row">
+        <div class="project-card">
+          <div class="project-card-image">
+            <i data-feather="folder"></i>
+          </div>
+          <div class="project-card-body">
+            <h3>Nama Project 1</h3>
+            <p>Deskripsi singkat mengenai project ini, fitur utamanya, dan masalah yang diselesaikan.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+            <a href="#" target="_blank" class="project-link">Lihat Project <i data-feather="arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-image">
+            <i data-feather="folder"></i>
+          </div>
+          <div class="project-card-body">
+            <h3>Nama Project 2</h3>
+            <p>Deskripsi singkat mengenai project ini, fitur utamanya, dan masalah yang diselesaikan.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Flask</span>
+            </div>
+            <a href="#" target="_blank" class="project-link">Lihat Project <i data-feather="arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-image">
+            <i data-feather="folder"></i>
+          </div>
+          <div class="project-card-body">
+            <h3>Nama Project 3</h3>
+            <p>Deskripsi singkat mengenai project ini, fitur utamanya, dan masalah yang diselesaikan.</p>
+            <div class="project-tags">
+              <span>C++</span>
+              <span>OpenGL</span>
+            </div>
+            <a href="#" target="_blank" class="project-link">Lihat Project <i data-feather="arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Projects Section End -->
+
+        <!-- Contact Section Start -->
+     <section id="contact" class="contact">
+      <div class="contact-head">
+        <h2>My <span>Contact</span></h2>
+      </div>
+
+      <div class="row">
+        <a href="https://instagram.com/dannhutt" target="_blank" class="contact-panel">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="https://github.com/username" target="_blank" class="contact-panel">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/username" target="_blank" class="contact-panel">
+          <i data-feather="linkedin"></i>
+        </a>
+      </div>
+     </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+         <!-- Footer Start -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Daniel Hutagalung. All rights reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      feather.replace();
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const hamburger = document.getElementById("hamburger-menu");
+      const navbarNav = document.getElementById("navbarNav");
+
+      hamburger.addEventListener("click", () => {
+        const isOpen = navbarNav.classList.toggle("active");
+        hamburger.setAttribute("aria-expanded", isOpen);
+      });
+
+      navbarNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navbarNav.classList.remove("active");
+          hamburger.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+
+  </body>
 </html>
