@@ -208,9 +208,21 @@ body {
   height: 20rem;
   object-fit: cover;
   object-position: bottom center;
-  border-radius: 1.5rem;
-  border: 3px solid var(--aksen);
+  border-radius: 16px;
+  /* border: 3px solid var(--aksen); */
   background-color: #141414;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  padding-bottom: 0;
+  color: #fff;
 }
 
 /* About Section */
@@ -246,7 +258,7 @@ body {
 }
 
 .about .row .about-img {
-  width: 80%;
+  width: 90%;
   position: relative;
   overflow: hidden;
   border-radius: 1.5rem;
@@ -470,6 +482,11 @@ body {
 
 .contact-head h2 {
   margin-bottom: 0;
+}
+
+.contact-head p {
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .contact .row {
@@ -715,6 +732,7 @@ body {
 
   .hero .content h1 {
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .hero .content h2 {
@@ -726,8 +744,16 @@ body {
   }
 
   .hero .content img {
-    width: 15rem;
+    margin-top: 3rem;
+    width: 18rem;
     height: 20rem;
+    margin-top: 7px;
+  }
+
+  .glass-panel {
+    padding: 7px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .about .row .content h3 {
