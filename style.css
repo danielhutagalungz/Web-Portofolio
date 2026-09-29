@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Minecraftia', sans-serif;;
+  font-family: "Minecraftia", sans-serif;
   background-color: var(--bg);
   color: #fff;
 }
@@ -183,7 +183,6 @@ body {
 .hero .content h2 {
   margin-left: 10px;
   letter-spacing: 4px;
-
 }
 
 .hero .content h2 span {
@@ -203,25 +202,27 @@ body {
 }
 
 .hero .content img {
-  flex-shrink: 0;
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: bottom center;
   border-radius: 16px;
   /* border: 3px solid var(--aksen); */
   background-color: #141414;
+  display: block;
 }
 
 .glass-panel {
+  flex-shrink: 0;
+  width: 20rem;
+  height: 20rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-  padding: 7px;
-  padding-bottom: 0;
+  padding: 10px;
   color: #fff;
 }
 
@@ -329,7 +330,7 @@ body {
 
 .menu .row .menu-card {
   border-radius: 10px;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #2e2e2e;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: center;
@@ -381,7 +382,7 @@ body {
 .projects .project-card {
   width: 18rem;
   border-radius: 10px;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #2e2e2e;
   overflow: hidden;
   background-color: #141414;
   display: flex;
@@ -500,7 +501,7 @@ body {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #2e2e2e;
   color: var(--primary);
   transition: all 0.3s ease;
 }
@@ -545,7 +546,7 @@ body {
     gap: 2rem;
   }
 
-  .hero .content img {
+  .glass-panel {
     width: 16rem;
     height: 16rem;
   }
@@ -628,8 +629,10 @@ body {
     order: 1;
   }
 
-  .hero .content img {
+  .hero .content .glass-panel {
     order: 2;
+    width: 12rem;
+    height: 12rem;
   }
 
   .hero .content h1,
@@ -651,11 +654,6 @@ body {
     font-size: 0.8rem;
   }
 
-  .hero .content img {
-    width: 12rem;
-    height: 12rem;
-  }
-
   /* About jadi 1 kolom (Flexbox column) */
   .about .row {
     flex-direction: column;
@@ -671,12 +669,11 @@ body {
   /* Gradient sisi kanan tidak relevan lagi saat gambar full-width,
      ganti jadi vignette bawah saja supaya foto tidak terlihat gelap sebelah */
   .about .row .about-img::after {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(26, 26, 26, 0) 60%,
-        rgba(26, 26, 26, 0.85) 100%
-      );
+    background: linear-gradient(
+      to bottom,
+      rgba(26, 26, 26, 0) 60%,
+      rgba(26, 26, 26, 0.85) 100%
+    );
   }
 
   .about .row .content h3,
@@ -743,17 +740,10 @@ body {
     font-size: 0.75rem;
   }
 
-  .hero .content img {
-    margin-top: 3rem;
-    width: 18rem;
-    height: 20rem;
+  .hero .content .glass-panel {
     margin-top: 7px;
-  }
-
-  .glass-panel {
-    padding: 7px;
-    padding-bottom: 0;
-    padding-top: 0;
+    width: 17rem;
+    height: 20rem;
   }
 
   .about .row .content h3 {
